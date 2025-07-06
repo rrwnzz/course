@@ -8,6 +8,9 @@ import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
+import { Link } from 'react-router-dom'
+import '../css/nav.css'
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -66,20 +69,33 @@ export default function SearchAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+        <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            MUI
-          </Typography>
-           <Typography sx={{marginRight:'2%'}}>Courses</Typography>
-           <Typography sx={{marginRight:'2%'}}>About Us</Typography>
-           <Typography sx={{marginRight:'2%'}}>Blog</Typography>
+        >
+             Home
+        </Typography>
+
+
+
+          <Typography sx={{marginRight:'10%'}}>
+                <Link className='navLink' to='/courses'>Courses</Link>
+           </Typography>
+           <Typography sx={{marginRight:'10%'}}>
+                <Link className='navLink' to='/about'>About Us</Link>
+           </Typography>
+           <Typography sx={{marginRight:'10%'}}>
+                <Link className='navLink' to='/blog'>Blog</Link>
+           </Typography>
+           <Typography sx={{marginRight:'10%'}}>
+                <Link className='navLink' to='/login'>Login</Link>
+           </Typography>
           <Search>
             <SearchIconWrapper>
-              <SearchIcon />
+              {/* <SearchIcon /> */}
+              <i class="fa-solid fa-cart-shopping"></i>
             </SearchIconWrapper>
           </Search>
         </Toolbar>
