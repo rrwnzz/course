@@ -15,9 +15,9 @@ export default function Login({ setUsername }) {
         const password = passwordRef.current.value;
         const newErrors = {};
 
-        if (username !== 'Rawan Almomani') {
-            newErrors.username = 'Username not found';
-        }
+        // if (username !== 'Rawan Almomani') {
+            // newErrors.username = 'Username not found';
+        // }
 
         if (password !== '12345') {
             newErrors.password = 'Wrong password, try again';
