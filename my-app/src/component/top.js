@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
+import Footer from './footer';
 
 // بيانات الكورسات
 const categories = [
@@ -96,6 +97,7 @@ export default function BasicGrid() {
           </Grid>
         ))}
       </Grid>
+      <Footer />
     </Box>
   );
 }

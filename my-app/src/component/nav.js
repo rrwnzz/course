@@ -83,9 +83,9 @@ export default function SearchAppBar() {
           <Typography sx={{marginRight:'10%'}}>
                 <Link className='navLink' to='/courses'>Courses</Link>
            </Typography>
-           <Typography sx={{marginRight:'10%'}}>
-                <Link className='navLink' to='/about'>About Us</Link>
-           </Typography>
+           {/* <Typography sx={{marginRight:'10%'}}> */}
+                {/* <Link className='navLink' to='/about'>About Us</Link> */}
+           {/* </Typography> */}
            <Typography sx={{marginRight:'10%'}}>
                 <Link className='navLink' to='/blog'>Blog</Link>
            </Typography>

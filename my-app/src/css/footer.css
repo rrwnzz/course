@@ -1,0 +1,36 @@
+#footer{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    /* السبيس بيتوين خليتهم مرتبين عالفوتر كل واحد بينه مسافه */
+}
+#whohleFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    /* قسمت الصور لغريد بحيث وزعتهم على عمودين و 3 صفوف */
+    gap: 10px; 
+    align-items: center;
+}
+
+#whohleFooter >h2 {
+    grid-column: 1 / -1;  
+    /* هاي مشان اخلي الصور ينزلو تحت العنوان */
+    margin-bottom: 10px;
+    /* حتى ارفع الصور لفوق شوي */
+}
+#Social {
+  display: flex;
+  flex-direction: column;
+  /* حتى كل السوشال ميديا ايكون يكونو تحت بعض */
+  gap: 2px; 
+  /* مسافه بين الايكونز */
+}
+
+#Social>i {
+  display: flex;        /* حتى اخلي الايكون والتيكست جنب بعض */
+  align-items: center;  
+  /* انزل الايكون حنى يصيرو جنب التيكست بالزبط */
+  gap: 5px;           
+  /* مسافه بين الايكون والتيكست */
+}
