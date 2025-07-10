@@ -5,6 +5,7 @@ import SearchAppBar from './component/nav';
 import Courses from './component/courses'; 
 import Main from './component/main';
 import Login from './component/login';
+import Web from './component/web';
 // اذا بدي افهم موضوع اليوزنيم ابدا بالتفكير من صفحة اللوغ ان
 function App() {
     const [username, setUsername] = useState('');
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Main username={username} />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/login" element={<Login setUsername={setUsername} />} />
+        <Route path="/web" element={<Web />}></Route>
       </Routes>
     </BrowserRouter>
   );
