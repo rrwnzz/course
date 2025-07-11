@@ -29,7 +29,7 @@ export default function Login({ setUsername }) {
 
         setErrors(newErrors);
 
-        if (newErrors.username) userNameRef.current.focus();
+     if (newErrors.username) userNameRef.current.focus();
         else if (newErrors.password) passwordRef.current.focus();
         else if (newErrors.email) emailRef.current.focus();
 

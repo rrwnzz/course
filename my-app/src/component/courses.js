@@ -131,6 +131,12 @@ export default function CategoryGrid() {
                     if (item.title === 'Web Basics') {
                       navigate('/web'); // navigate to /web page
                     }
+                    else if(item.title === 'App Development') {
+                      navigate('/appD'); // navigate to /appD page
+                    }
+                    else if(item.title === 'AI and Ml') {
+                      navigate('/ai'); // navigate to /appD page
+                    }
                     // You can add more navigation logic for other courses here
                   }}
                 >

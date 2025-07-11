@@ -6,6 +6,8 @@ import Courses from './component/courses';
 import Main from './component/main';
 import Login from './component/login';
 import Web from './component/web';
+import AppD from './component/appD';
+import Ai from './component/ai';
 // اذا بدي افهم موضوع اليوزنيم ابدا بالتفكير من صفحة اللوغ ان
 function App() {
     const [username, setUsername] = useState('');
@@ -17,6 +19,8 @@ function App() {
         <Route path="/courses" element={<Courses />} />
         <Route path="/login" element={<Login setUsername={setUsername} />} />
         <Route path="/web" element={<Web />}></Route>
+        <Route path="/appD" element={<AppD />}></Route>
+        <Route path="/ai" element={<Ai />}></Route>
       </Routes>
     </BrowserRouter>
   );
