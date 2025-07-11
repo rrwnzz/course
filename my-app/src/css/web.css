@@ -1,0 +1,137 @@
+/* General container */
+#blackBack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #673AB7, #9575CD);
+
+  /* color: #f9f9f9; */
+  padding: 40px;
+  border-radius: 16px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); */
+  max-width: 1000px;
+  margin: 40px auto;
+  /* transition: transform 0.3s ease; */
+}
+
+#blackBack:hover {
+  /* transform: translateY(-5px); */
+}
+
+/* Left content */
+#leftBack {
+  flex: 1;
+  padding-right: 30px;
+}
+
+#leftBack > h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #ffb347; /* Soft accent color */
+}
+
+#leftBack> p {
+  font-size: 18px;
+  /* line-height: 1.6; */
+  color: #dcdcdc;
+}
+
+/* Right content (image) */
+#rightBack {
+  flex: 0 0 200px;
+}
+
+#rightBack >img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  /* object-fit: cover; */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+#learn{
+    color:#dcdcdc
+}
+#reviews {
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+#reviews >h3 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+}
+#reviewCard {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+#reviewText {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+#reviewInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviewer {
+  font-weight: 600;
+  color: #673AB7; 
+}
+.stars {
+  color: #FFD700; 
+  font-size: 18px;
+}
+#addReviewForm {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+  /* max-width: 450px; */
+  margin: 20px auto;
+  background: #fafafa;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#addReviewForm input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#addReviewForm >input:focus {
+  border-color: #673AB7;
+  box-shadow: 0 0 5px rgba(103, 58, 183, 0.3);
+  outline: none;
+}
+
+#addReviewForm >button {
+  background-color: #673AB7;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#addReviewForm button:hover {
+  background-color: #5e35b1;
+}
+
+
+
