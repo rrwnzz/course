@@ -4,7 +4,7 @@ import '../css/web.css';
 export default function Ai() {
   const [reviews, setReviews] = useState([
     { text: "This is an amazing course for the beginners who want to understand everything about in machine learning!. ", reviewer: "– Jackson K.", stars: "★★★★★", isDefault: true },
-    { text: "Great course! The theory was explained in a simple way, and the practical part!", reviewer: "–Shekhmous M.", stars: "★★★☆☆", isDefault: true },
+    { text: "Great course! The theory and the practical part were explained in a simple way!", reviewer: "–Shekhmous M.", stars: "★★★☆☆", isDefault: true },
     { text: "This course was brilliant!", reviewer: "–Jon A.", stars: "★★★★★", isDefault: true },
   ]);
 

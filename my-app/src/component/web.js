@@ -17,7 +17,7 @@ export default function Web() {
       <div id='blackBack'>
         <div id='leftBack'>
           <h3>Complete web development basics course</h3>
-          <p>Only web development course that you will need. Covers HTML, CSS, JavaScript</p>
+          <p>The Only web development course that you will need. Covers HTML, CSS, JavaScript</p>
           <h3>What you will learn: </h3>
           <ol id='learn'>
             <li>How HTML is used to structure content</li>
