@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom"; // ✅ Step 1
+import { useNavigate } from "react-router-dom"; 
 import "../css/login.css";
 
 export default function Login({ setUsername }) {
@@ -7,11 +7,11 @@ export default function Login({ setUsername }) {
     const emailRef = useRef();
     const passwordRef = useRef();
     const [errors, setErrors] = useState({});
-    const navigate = useNavigate(); // ✅ Step 2
+    const navigate = useNavigate(); 
 
     const handleSubmit = () => {
-        const username = userNameRef.current.value.trim();
-        const email = emailRef.current.value.trim();
+        const username = userNameRef.current.value;
+        const email = emailRef.current.value;
         const password = passwordRef.current.value;
         const newErrors = {};
 
@@ -33,17 +33,19 @@ export default function Login({ setUsername }) {
         else if (newErrors.password) passwordRef.current.focus();
         else if (newErrors.email) emailRef.current.focus();
 
-        // ✅ If all inputs are valid
+        // اذا كل الانبوتس صحيحه
         if (Object.keys(newErrors).length === 0) {
-            setUsername(username);     // update App state
-            navigate("/");             // ✅ redirect to home page
+            setUsername(username);     
+            // عدل عالستيت
+            navigate("/");  
+            // انتقل لصفحة الهوم
         }
     };
 
     return (
-        <div className="login-container">
+        <div className="login">
             <form 
-                className="login-form" 
+                className="loginForm" 
                 onSubmit={(e) => {
                     e.preventDefault();
                     handleSubmit();
@@ -52,18 +54,18 @@ export default function Login({ setUsername }) {
                 <h2>Login</h2>
 
                 <label>Username</label>
-                <input type="text" ref={userNameRef} className="input-field" />
-                {errors.username && <p className="error-text">{errors.username}</p>}
+                <input type="text" ref={userNameRef} className="inputField" />
+                {errors.username && <p className="errorText">{errors.username}</p>}
 
                 <label>Password</label>
-                <input type="password" ref={passwordRef} className="input-field" />
-                {errors.password && <p className="error-text">{errors.password}</p>}
+                <input type="password" ref={passwordRef} className="inputField" />
+                {errors.password && <p className="errorText">{errors.password}</p>}
 
                 <label>Email</label>
-                <input type="email" ref={emailRef} className="input-field" />
-                {errors.email && <p className="error-text">{errors.email}</p>}
+                <input type="email" ref={emailRef} className="inputFeld" />
+                {errors.email && <p className="errorText">{errors.email}</p>}
 
-                <input type="submit" value="Login" className="submit-button" />
+                <input type="submit" value="Login" className="submitButton" />
             </form>
         </div>
     );

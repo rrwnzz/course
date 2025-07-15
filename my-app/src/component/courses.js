@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import Rating from '@mui/material/Rating';
 import { useNavigate } from 'react-router-dom';
 
-// Your categories data
+// بيانات الكورسات
 const categories = [
   {
     title: 'Web Basics',
@@ -129,15 +129,17 @@ export default function CategoryGrid() {
                   }}
                   onClick={() => {
                     if (item.title === 'Web Basics') {
-                      navigate('/web'); // navigate to /web page
+                      navigate('/web'); 
+                      // روح على صفحة الويب
                     }
                     else if(item.title === 'App Development') {
-                      navigate('/appD'); // navigate to /appD page
+                      navigate('/appD'); 
+                      // روح على صفحة برمجة التطبيقات
                     }
                     else if(item.title === 'AI and Ml') {
-                      navigate('/ai'); // navigate to /appD page
-                    }
-                    // You can add more navigation logic for other courses here
+                      navigate('/ai'); 
+                      // روح على صفحة الذكاء                
+                      }
                   }}
                 >
                   Enroll Now

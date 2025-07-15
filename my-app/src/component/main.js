@@ -4,19 +4,18 @@ import BasicGrid from './top';
 export default function Main(props) {
     return (
         <div id='main'>
-            {/* Top section (side by side) */}
-            <div className="top-section">
+            <div className="topSection">
                 <div id='LeftMain'>
                     <h3>
                         Welcome {props.username}. We're here to help you learn, grow, and succeed.
                     </h3>
-                    <div className="search-container">
+                    <div className="searchContainer">
                         <input 
                             type="text" 
                             placeholder="Search for courses, tips..." 
-                            className="search-input"
+                            className="searchInput"
                         />
-                        <button className="search-button">
+                        <button className="searchButton">
                             <i className="fas fa-search"></i>
                         </button>
                     </div>
@@ -24,13 +23,11 @@ export default function Main(props) {
 
                 <div id='rightMain'>
                     <img 
-                        src="https://i.pinimg.com/736x/29/dd/db/29dddbb74db0c68adc5358271281e03a.jpg" 
-                        alt="Learning Visual" 
+                        src="https://i.pinimg.com/736x/29/dd/db/29dddbb74db0c68adc5358271281e03a.jpg"  
                     />
                 </div>
             </div>
-
-            {/* BasicGrid appears below */}
+            {/* بدي احط البيسك غريد تحت المين */}
             <BasicGrid />
         </div>
     );

@@ -33,7 +33,7 @@ export default function Ai() {
       <div id='reviews'>
         <h3>Customer Reviews</h3>
 
-        {/* Form to add new review */}
+        {/*لحتى اضيق ريفيو جديده*/}
         <form id='addReviewForm' onSubmit={(e) => {
           e.preventDefault();
           setReviews([...reviews, {
@@ -70,7 +70,7 @@ export default function Ai() {
           <button type='submit'>Add Review</button>
         </form>
 
-        {/* Display reviews */}
+        {/*عرض الريفيوز */}
         {reviews.map((review, index) => (
           <div id='reviewCard' key={index}>
             <p id='reviewText'>"{review.text}"</p>

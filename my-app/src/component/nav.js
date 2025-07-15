@@ -11,7 +11,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom'
 import '../css/nav.css'
 
-
+// عدلت لون الخلفيه وشلت ايكون الكارت
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
   borderRadius: theme.shape.borderRadius,
@@ -43,7 +43,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   width: '100%',
   '& .MuiInputBase-input': {
     padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create('width'),
     [theme.breakpoints.up('sm')]: {
@@ -82,12 +81,6 @@ export default function SearchAppBar() {
 
           <Typography sx={{marginRight:'10%'}}>
                 <Link className='navLink' to='/courses'>Courses</Link>
-           </Typography>
-           {/* <Typography sx={{marginRight:'10%'}}> */}
-                {/* <Link className='navLink' to='/about'>About Us</Link> */}
-           {/* </Typography> */}
-           <Typography sx={{marginRight:'10%'}}>
-                <Link className='navLink' to='/blog'>Blog</Link>
            </Typography>
            <Typography sx={{marginRight:'10%'}}>
                 <Link className='navLink' to='/login'>Login</Link>

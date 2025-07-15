@@ -33,7 +33,7 @@ export default function AppD() {
       <div id='reviews'>
         <h3>Customer Reviews</h3>
 
-        {/* Form to add new review */}
+        {/*فورم لاضافة ريفيو جديد*/}
         <form id='addReviewForm' onSubmit={(e) => {
           e.preventDefault();
           setReviews([...reviews, {
@@ -70,7 +70,7 @@ export default function AppD() {
           <button type='submit'>Add Review</button>
         </form>
 
-        {/* Display reviews */}
+        {/*اعرض الريفيو*/}
         {reviews.map((review, index) => (
           <div id='reviewCard' key={index}>
             <p id='reviewText'>"{review.text}"</p>

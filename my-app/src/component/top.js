@@ -59,7 +59,6 @@ export default function BasicGrid() {
             <Item sx={{ height: '100%' }}>
               <img
                 src={item.img}
-                alt={item.title}
                 style={{
                   width: '100%',
                   height: '200px',
@@ -82,7 +81,7 @@ export default function BasicGrid() {
               </div>
               <button
                 style={{
-                 marginTop: '12px',
+                marginTop: '12px',
                 backgroundColor: '#673AB7',
                 color: 'white',
                 border: 'none',

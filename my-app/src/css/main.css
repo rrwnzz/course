@@ -2,12 +2,12 @@
   padding: 40px;
 }
 
-.top-section {
+.topSection {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  margin-bottom: 30px; /* Space before BasicGrid */
+  margin-bottom: 30px; /* مسافه قبل الغريد*/
 }
 
 #LeftMain {
@@ -17,20 +17,20 @@
   color: #333;
 }
 
-#rightMain img {
+#rightMain >img {
   width: 400px;
   height: auto;
   border-radius: 12px;
 }
 
-.search-container {
+.searchContainer {
   display: flex;
   margin-top: 20px;
   width: 100%;
   max-width: 500px;
 }
 
-.search-input {
+.searchInput {
   flex: 1;
   padding: 10px 15px;
   border: 1px solid #673AB7;
@@ -38,15 +38,14 @@
   font-size: 16px;
 }
 
-.search-button {
+.searchButton {
   padding: 10px 15px;
   background-color: #673AB7;
   color: white;
   border: none;
   border-radius: 0 4px 4px 0;
-  cursor: pointer;
 }
 
-.search-button:hover {
+.searchButton:hover {
   background-color: #5e35b1;
 }
