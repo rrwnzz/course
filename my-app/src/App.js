@@ -8,6 +8,7 @@ import Login from './component/login';
 import Web from './component/web';
 import AppD from './component/appD';
 import Ai from './component/ai';
+import Blog from './component/blog';
 // اذا بدي افهم موضوع اليوزنيم ابدا بالتفكير من صفحة اللوغ ان
 function App() {
     const [username, setUsername] = useState('');
@@ -21,6 +22,8 @@ function App() {
         <Route path="/web" element={<Web />}></Route>
         <Route path="/appD" element={<AppD />}></Route>
         <Route path="/ai" element={<Ai />}></Route>
+        <Route path="/blog" element={<Blog />}></Route>
+        
       </Routes>
     </BrowserRouter>
   );

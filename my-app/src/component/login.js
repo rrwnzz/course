@@ -62,7 +62,7 @@ export default function Login({ setUsername }) {
                 {errors.password && <p className="errorText">{errors.password}</p>}
 
                 <label>Email</label>
-                <input type="email" ref={emailRef} className="inputFeld" />
+                <input type="email" ref={emailRef} className="inputField" />
                 {errors.email && <p className="errorText">{errors.email}</p>}
 
                 <input type="submit" value="Login" className="submitButton" />
