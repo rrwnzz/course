@@ -92,7 +92,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function CategoryGrid() {
-  const navigate = useNavigate(); // useNavigate hook
+  const navigate = useNavigate(); 
 
   return (
     <Box sx={{ flexGrow: 1, p: 3 }}>

@@ -1,24 +1,16 @@
-/* General container */
+
 #blackBack {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(135deg, #673AB7, #9575CD);
 
-  /* color: #f9f9f9; */
   padding: 40px;
   border-radius: 16px;
-  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); */
   max-width: 1000px;
   margin: 40px auto;
-  /* transition: transform 0.3s ease; */
 }
 
-#blackBack:hover {
-  /* transform: translateY(-5px); */
-}
-
-/* Left content */
 #leftBack {
   flex: 1;
   padding-right: 30px;
@@ -27,16 +19,15 @@
 #leftBack > h3 {
   font-size: 28px;
   margin-bottom: 15px;
-  color: #ffb347; /* Soft accent color */
+  color: #ffb347; 
 }
 
 #leftBack> p {
   font-size: 18px;
-  /* line-height: 1.6; */
   color: #dcdcdc;
 }
 
-/* Right content (image) */
+
 #rightBack {
   flex: 0 0 200px;
 }
@@ -45,7 +36,6 @@
   width: 100%;
   height: auto;
   border-radius: 12px;
-  /* object-fit: cover; */
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 #learn{
@@ -71,7 +61,6 @@
   margin-bottom: 15px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
 }
 #reviewText {
   font-size: 17px;
@@ -94,9 +83,7 @@
 }
 #addReviewForm {
   display: flex;
-  /* flex-direction: column; */
   gap: 10px;
-  /* max-width: 450px; */
   margin: 20px auto;
   background: #fafafa;
   padding: 15px 20px;
@@ -125,8 +112,6 @@
   font-size: 14px;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
 }
 
 #addReviewForm button:hover {
