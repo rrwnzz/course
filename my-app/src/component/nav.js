@@ -83,7 +83,7 @@ export default function SearchAppBar() {
                 <Link className='navLink' to='/courses'>Courses</Link>
            </Typography>
           <Typography sx={{marginRight:'10%'}}>
-            <Link className='navLink' to='/blog'>Blogs</Link>
+            <Link className='navLink' to='/blog'>Tips</Link>
           </Typography>
            <Typography sx={{marginRight:'10%'}}>
                 <Link className='navLink' to='/login'>Login</Link>
