@@ -7,7 +7,7 @@ export default function AppD() {
     { text: "Excellent course for all levels that are interested in learning IOS development!", reviewer: "– Marah M.", stars: "★★★☆☆", isDefault: true },
     { text: "This course was brilliant!", reviewer: "– Angela J.", stars: "★★★★★", isDefault: true },
   ]);
-
+// these state store what user types when they want to add new reviews
   const [newText, setNewText] = useState('');
   const [newReviewer, setNewReviewer] = useState('');
   const [newStars, setNewStars] = useState('');

@@ -117,6 +117,13 @@ export default function CategoryGrid() {
                   value={item.rating}
                   precision={0.5}
                   readOnly
+                  // rating هي مكتبة جاهزة من رياكت ام يو اي 
+                  // name -> rating 0,rating1,rating2....الهدف مشان رياكت ام يو تكون معطيه لكل واحد اشي مختلف 
+                  // value -> لما الريتينغ مثلا يكون 4.5 الريتينغ لايبراراي بتظهر نجوم بمقدار الريت
+                  // precision-> شكل النجوم
+                  // precision={1} → نجمه معبيه كامله (1, 2, 3, …)
+                  // precision={0.5} → نص النجحة معبيه (e.g., 4.5 stars)
+                  // radOnly-> معناها فقط للعرض يعني اليوزر ما بقدر يعدل عالريت بس بشوفه
                 />
                 <Button
                   variant="contained"

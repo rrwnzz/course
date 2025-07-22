@@ -35,8 +35,11 @@ export default function Login({ setUsername }) {
 
         // اذا كل الانبوتس صحيحه
         if (Object.keys(newErrors).length === 0) {
-            setUsername(username);     
-            // عدل عالستيت
+            setUsername(username);    
+            // new errors: بتحتوي على كل الايرورز اذا كانت موجوده على شكل كي وفاليو
+            // newErrors {password(key):wrong password(value)} 
+            // object.keys(newErrors) برجع الكي من النيو ايرور وهو باسوورد مثلا على شكل اراي
+            // اذا طول الابوجيكت.كيز صفر يعني الاري ما فيها عناصر يعني ما في ايرورز لهيك بنتقل بعدل عاليوزرنيم وبنتقل للهوم
             navigate("/");  
             // انتقل لصفحة الهوم
         }

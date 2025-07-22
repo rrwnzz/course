@@ -1,0 +1,18 @@
+#blog{
+    padding: 40px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 30px;
+}
+
+#leftBlog >h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #673AB7;        /* your brand purple */
+  margin-bottom: 16px;
+  border: 1px solid #673AB7;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}

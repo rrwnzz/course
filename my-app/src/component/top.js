@@ -77,6 +77,12 @@ export default function BasicGrid() {
               >
                 {[...Array(5)].map((_, i) => (
                   <i key={i} className="fa-solid fa-star"></i>
+                  // انشأت اراي فيها 5 عناصر مشان احط 5 نجوم وراح يكونو الخمس عناصر هم 
+                  // undefiend
+                  // راح اعمل لوب بحيث الاندر سكور هي عناصر الاراي و 
+                  // i هو الامديكس
+                  // key بالرياكت لما استخدم الماب لازم كل عنصر يكون اله مفتاح مختلف
+                  // لما الكي بساوي {i} وهو الامديكس بكل مره بتغير 0و1و2و3و4 معناها جد قيمته بتغير ومختلف حتى ما تصير في مشاكل بال rerender
                 ))}
               </div>
               <button
@@ -87,7 +93,7 @@ export default function BasicGrid() {
                 border: 'none',
                 padding: '8px 16px',
                 borderRadius: '4px',
-                cursor: 'pointer',}}
+                }}
             >   
                 Enroll Now
                 </button>

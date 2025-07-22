@@ -27,7 +27,6 @@
 }
 
 label {
-    font-weight: 600;
     color: #444;
 }
 
@@ -36,7 +35,6 @@ label {
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    transition: border 0.3s;
 }
 .submitButton {
     background-color: #673AB7;

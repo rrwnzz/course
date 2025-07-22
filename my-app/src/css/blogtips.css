@@ -1,0 +1,56 @@
+#blogTips {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  margin: 40px auto;
+  padding: 30px 25px;
+  max-width: 850px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+#blogTips h4 {
+  font-size: 24px;
+  color: #673AB7;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+  background: linear-gradient(90deg, #673AB7, #9c27b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#blogTips ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#blogTips li {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  margin-bottom: 14px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#blogTips li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  background: #f3e5f5;
+}
+
+.emoji {
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.tipText {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
