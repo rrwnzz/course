@@ -35,22 +35,27 @@ export default function AppD() {
 
         {/*فورم لاضافة ريفيو جديد*/}
         <form id='addReviewForm' onSubmit={(e) => {
+          // ...reviews-> بعرض اول كل الريفيوز ثم الريفيو المضاف
           e.preventDefault();
           setReviews([...reviews, {
             text: newText,
+            // تيكست هو كي والفاليو الريفيو اللي راح يكتبها اليوزر
             reviewer: newReviewer,
             stars: newStars,
             isDefault: false
+            // حتى تبين الديليت بوتن لما ينضاف الريفيو
           }]);
           setNewText('');
           setNewReviewer('');
           setNewStars('');
+          // ارجع فيلدز الريفيو فاضيين مشان اقدر ارجع اضيف كمان ريفيو
         }}>
           <input 
             type='text' 
             placeholder='Enter review text' 
             value={newText} 
             onChange={(e) => setNewText(e.target.value)} 
+            // السيت راح يعدل عالستيت بحيث بدل ما النيو تيكست هي سترينغ فاضي بتخزن فيها الشيء اللي راح يكتبه اليوزر
             required
           />
           <input 
@@ -83,11 +88,21 @@ export default function AppD() {
                 className='deleteBtn' 
                 onClick={() => {
                   if (window.confirm('Are you sure you want to delete this review?')) {
-                    setReviews(reviews.filter((_, i) => i !== index));
+                    const newReviews = reviews.filter(function(review, i) {
+                      return i !== index;
+              });
+                setReviews(newReviews);
+
                   }
                 }}>
                 Delete
               </button>
+              // newReview -> اراي فيها كل الريفيو ما عدا اللي بدي اجذفها
+              // الشرط معناه اذا الديفولت هو فولس اظهر الديليت , الديفولت يكون فولس لما اليوزر ييجي بده يكتب ريفيو
+              // فيلتر بنشأ اراي فيها الريفيوز اللي ما بدي امسحها
+              // index store the index of the review we want to delete, delete second review -> index 1
+              // 0 !== 1? no return review at index 0 
+              // 1 !==1 ? yes do not return the review at index 1
             )}
           </div>
         ))}
